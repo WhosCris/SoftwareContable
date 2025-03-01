@@ -1,0 +1,71 @@
+@import './base.css';
+
+#app {
+  max-width: max-content;
+  margin: 0 auto;
+  padding: 2rem;
+  font-weight: normal;
+}
+
+a,
+.green {
+  text-decoration: none;
+  color: hsla(160, 100%, 37%, 1);
+  transition: 0.4s;
+  padding: 3px;
+}
+
+@media (hover: hover) {
+  a:hover {
+    background-color: hsla(160, 100%, 37%, 0.2);
+  }
+}
+
+@media (min-width: 1024px) {
+  body {
+    display: flex;
+    place-items: center;
+  }
+
+  #app {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 0 0;
+  }
+
+  /* Estilos para el modo claro */
+  .v-text-field input {
+    background-color: #FFFFFF;
+    color: #374151;
+  }
+  .v-text-field input::placeholder {
+    color: #9CA3AF;
+  }
+  .v-text-field input:focus {
+    border-color: #2563EB;
+  }
+}
+
+@font-face {
+  font-family: 'Space Grotesk';
+  src: url('./fonts/SpaceGrotesk/SpaceGrotesk-Medium.woff2') format('woff2');
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: 'Space Grotesk';
+  src: url('./fonts/SpaceGrotesk/SpaceGrotesk-Bold.woff2') format('woff2');
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url('./fonts/Inter/Inter-Regular.woff2') format('woff2');
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'Fira Code';
+  src: url('./fonts/FiraCode/FiraCode-Medium.woff2') format('woff2');
+  font-weight: 500;
+}
