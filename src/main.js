@@ -20,6 +20,7 @@ const vuetify = createVuetify({
           colors: {
             primary: '#374151',
             buttonprimary: '#2563EB',
+            buttonerror: '#EF4444',
             card: '#FAFAFA',
           },
         },

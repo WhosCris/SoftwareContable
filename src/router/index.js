@@ -3,6 +3,7 @@ import Login from '../views/Login.vue';
 import CreateAccount from '../views/CreateAccount.vue';
 import ForgotPassword from '@/views/ForgotPassword.vue';
 import MainMenu from '@/views/MainMenu.vue';
+import MainBusiness from '@/views/MainBusiness.vue';
 
 const routes = [
   {
@@ -20,6 +21,10 @@ const routes = [
   {
     path: '/home', // Ruta para el menú principal
     component: MainMenu,
+  },
+  {
+    path: '/business', // Ruta para el menú principal
+    component: MainBusiness,
   }
 ];
 
