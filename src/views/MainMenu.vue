@@ -36,35 +36,23 @@
             <v-col cols="9">
                 <v-card color="card" elevation="12">
                     <v-container>
+                        <v-row align="center" justify="center" class="mb-1">
+                            <span class="text-h4 text-primary ma-2" style="font-family: 'Space Grotesk'">Dashboard
+                                Empresas</span>
+                        </v-row>
                         <v-row class="ma-1">
                             <v-text-field label="Buscar empresa" variant="outlined"
                                 prepend-inner-icon="mdi-magnify"></v-text-field>
                         </v-row>
                         <v-divider></v-divider>
-                        <v-row align="center" justify="center" class="ma-2">
-                            <span class="text-h4 ma-2" style="font-family: 'Space Grotesk'">Dashboard Empresas</span>
-                        </v-row>
                         <v-row align="start" justify="start" class="ma-2">
                             <v-col cols="4">
                                 <v-card elevation="12">
                                     <v-container>
-                                        <v-card-title class="text-center">NUEVA EMPRESA</v-card-title>
-                                        <v-row justify="center" class="ma-2">
-                                            <v-img max-width="128" src="/src/assets/icons/anadir-empresa-128px.png"
-                                                contain></v-img>
-                                        </v-row>
-                                    </v-container>
-                                </v-card>
-                            </v-col>
-                            <v-col cols="4">
-                                <v-card elevation="12">
-                                    <v-container>
-                                        <v-row justify="space-between">
+                                        <v-row justify="start">
                                             <v-btn color="buttonprimary" icon="mdi-star-outline" variant="text"></v-btn>
-                                            <v-btn color="buttonprimary" icon="mdi-dots-vertical"
-                                                variant="text"></v-btn>
                                         </v-row>
-                                        <v-card-title class="text-center">CIVO Tech</v-card-title>
+                                        <v-card-title class="text-center text-primary">CIVO Tech</v-card-title>
                                         <v-row justify="center" class="ma-2">
                                             <v-img max-width="128" src="/src/assets/icons/anadir-empresa-128px.png"
                                                 contain></v-img>
@@ -76,10 +64,11 @@
                                                         v-bind="activatorProps"></v-btn>
                                                 </template>
                                                 <template v-slot:default="{ isActive }">
-                                                    <v-card title="Ref Activator"
-                                                        text="Cuando usas el slot activator, el diálogo se activará correctamente.">
+                                                    <v-card>
+                                                        <v-card-tittle class="text-h5 font-weight-bold text-center text-primary ma-1" style="font-family: 'Space Grotesk'">CIVO Tech</v-card-tittle>
                                                         <template v-slot:actions>
-                                                            <v-btn class="ml-auto" @click="isActive.value = false">Cerrar</v-btn>
+                                                            <v-btn class="ml-auto" color="buttonerror"
+                                                                @click="isActive.value = false">Cerrar</v-btn>
                                                         </template>
                                                     </v-card>
                                                 </template>
@@ -97,6 +86,10 @@
         </v-row>
     </v-container>
 </template>
+
+<script>
+
+</script>
 
 <style scoped>
 .fill-height {
