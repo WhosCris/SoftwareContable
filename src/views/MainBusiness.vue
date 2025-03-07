@@ -37,8 +37,7 @@
                 <v-card color="card" elevation="12">
                     <v-container>
                         <v-row align="center" justify="center" class="mb-1">
-                            <span class="text-h4 text-primary ma-2" style="font-family: 'Space Grotesk'">Dashboard
-                                Empresas</span>
+                            <span class="text-h4 text-primary ma-2" style="font-family: 'Space Grotesk'">Menú Contabilidad</span>
                         </v-row>
                         <v-row class="ma-1">
                             <v-text-field label="Buscar empresa" variant="outlined"
