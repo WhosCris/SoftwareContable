@@ -17,7 +17,6 @@ export default {
 
 <template>
   <v-app>
-    <h1>Firebase-conn</h1>
     <div class="background">
       <router-view />
     </div>
